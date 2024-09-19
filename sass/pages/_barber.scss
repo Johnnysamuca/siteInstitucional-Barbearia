@@ -1,0 +1,121 @@
+// O conteúdo desse arquivo é exluxivo da página.
+
+.secao--hero {
+  @include flex(column, center, start, 0);
+  background-image: url("/assets/img-hero.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  height: 50rem;
+}
+
+.secao--feature {
+  @include flex(column, center, start, 2.3rem);
+}
+
+.secao--preco {
+  @include flex(column, center, start, 2.3rem);
+}
+
+.container--hero {
+  @include flex($flow: column, $gap: 2.3rem);
+  max-width: 60rem;
+  background-color: $white;
+  border-radius: 1rem;
+  height: 40rem;
+  transform: translate(-30%, 10%);
+  box-shadow: inset 0rem 0rem 0.8rem lighten($black, 80%);
+
+  @include respond(medium) {
+    max-width: 50rem;
+    height: 45rem;
+    transform: translate(-8%, 5%);
+  }
+
+  @include respond(small) {
+    max-width: 40rem;
+  }
+
+  &__titulo {
+    font-size: 3.12rem;
+    line-height: 1;
+
+    @include respond(small) {
+      font-size: 2.3rem;
+    }
+  }
+
+  &__subtitulo {
+    font-size: 1.92rem;
+
+    @include respond(small) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.container--feature {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+
+  @include respond(medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(small) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.container--precos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.3rem;
+
+  @include respond(medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.container--sobre {
+  @include flex($aling: center, $justify: space-between);
+
+  @include respond(large) {
+    @include flex($flow: column, $aling: center, $justify: center);
+  }
+}
+
+.container--rodape {
+  @include flex($aling: center, $justify: space-between);
+  padding: 0;
+
+  @include respond(medium) {
+    @include flex(column, center, center, 1.28rem);
+  }
+}
+
+.subititulo--preco {
+  padding-bottom: 3rem;
+}
+
+.subtitulo--sobre {
+  text-align: left;
+  font-size: 3.9rem;
+
+  @include respond(large) {
+    text-align: center;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: $black;
+  font-size: 1.92rem;
+}
+
+.nomeDesenvolvedor-txt {
+  font-size: 1.92rem;
+  font-weight: 600;
+}

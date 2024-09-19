@@ -1,0 +1,42 @@
+// Aqui ficaram as informações como body html e reset do css
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(xlarge) {
+    font-size: 56.25%;
+  }
+
+  @include respond(large) {
+    font-size: 50%;
+  }
+
+  @include respond(medium) {
+    font-size: 43.75%;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: $black;
+  background-color: $black-suave;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 2.76rem;
+  color: $white;
+}

@@ -1,0 +1,44 @@
+// Esse arquivo contem funções variavéis e mixins
+
+// Variaveis
+$black: #000;
+$white: #fff;
+$black-suave: lighten($black, 10%);
+$gray: lighten($black, 40);
+
+// Mixins
+@mixin flex($flow: row, $aling: stretch, $justify: start, $gap: 0) {
+  display: flex;
+  flex-flow: $flow;
+  align-items: $aling;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin respond($tamanho) {
+  @if $tamanho == xlarge {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $tamanho == large {
+    @media (max-width: 62.44em) {
+      @content;
+    }
+  }
+  @if $tamanho == medium {
+    @media (max-width: 47.94em) {
+      @content;
+    }
+  }
+  @if $tamanho == small {
+    @media (max-width: 30em) {
+      @content;
+    }
+  }
+  @if $tamanho == xsmall {
+    @media (max-width: 22.5em) {
+      @content;
+    }
+  }
+}

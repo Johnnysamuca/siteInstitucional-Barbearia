@@ -1,0 +1,14 @@
+.caixa-sobre {
+  @include flex($flow: column, $gap: 2.76rem);
+  max-width: 70rem;
+  padding: 1.28rem 1.6rem;
+  color: $white;
+
+  @include respond(xlarge) {
+    max-width: 60rem;
+  }
+
+  @include respond(large) {
+    max-width: 70rem;
+  }
+}

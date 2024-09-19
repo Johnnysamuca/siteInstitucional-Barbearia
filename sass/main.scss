@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+// Abstracts
+@import "abstracts/helpers";
+
+// 2. Base stuff
+@import "base/base";
+
+// 3. Layout-related sections
+@import "layout/layout";
+
+// 4. Components
+@import "components/button";
+@import "components/rodape";
+@import "components/caixa";
+@import "components/caixa-preco";
+@import "components/caixa-sobre";
+@import "components/caixa-imagem";
+
+// 5. Pages
+@import "./pages/barber";

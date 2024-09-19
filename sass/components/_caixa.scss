@@ -1,0 +1,19 @@
+.caixa {
+  @include flex(column, start, start, 2.3rem);
+  background-color: $white;
+  border-radius: 0.86rem;
+  max-width: 30rem;
+  padding: 1.6rem 2.3rem;
+
+  &____logo-titulo {
+    @include flex(column, start, start, 1.6rem);
+  }
+
+  &__svg {
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    background-color: $black;
+    border-radius: 0.65rem;
+  }
+}

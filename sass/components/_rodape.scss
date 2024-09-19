@@ -1,0 +1,11 @@
+.rodape {
+  background-color: $white;
+}
+
+.endereco {
+  @include respond(medium) {
+    text-align: center;
+    font-size: 1.92rem;
+    font-weight: 700;
+  }
+}
