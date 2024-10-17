@@ -1,7 +1,7 @@
 const botaoMarcaConsulta = document.querySelector(".btn-temp");
 
 function redirecionaWhats() {
-  const phoneNumber = "5524999419788";
+  const phoneNumber = "999999999";
   const message = "Olá gostaria de ser atendida(o)";
   const whatsUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
